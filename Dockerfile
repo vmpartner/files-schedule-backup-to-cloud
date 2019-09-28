@@ -7,7 +7,7 @@ ENV CHECK_URL **None**
 RUN apk update && apk add curl
 ADD upload.sh /upload.sh
 ADD run.sh /run.sh
-RUN chmod +x /backup.sh && chmod +x /run.sh
+RUN chmod +x /upload.sh && chmod +x /run.sh
 RUN curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip && \
     unzip rclone-current-linux-amd64.zip && \
     cd rclone-*-linux-amd64 && \
