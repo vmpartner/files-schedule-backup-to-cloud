@@ -2,7 +2,6 @@ FROM alpine
 
 ENV RCLONE_DEST **None**
 ENV SCHEDULE **None**
-ENV SCHEDULE **None**
 ENV CHECK_URL **None**
 
 RUN apk update && apk add curl
