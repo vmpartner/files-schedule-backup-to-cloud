@@ -13,10 +13,7 @@ RUN curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip && \
     cd rclone-*-linux-amd64 && \
     cp rclone /usr/bin/ && \
     chown root:root /usr/bin/rclone && \
-    chmod 755 /usr/bin/rclone && \
-    mkdir -p /usr/share/man/man1 && \
-    cp rclone.1 /usr/share/man/man1/ && \
-    makewhatis /usr/share/man
+    chmod 755 /usr/bin/rclone
 
 USER root
 
