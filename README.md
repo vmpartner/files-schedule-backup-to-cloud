@@ -1,4 +1,4 @@
-# Backup files to ftp by cron schedule 
+# Backup files to cloud by cron schedule & rclone
 
 Usage example
 ```yaml
