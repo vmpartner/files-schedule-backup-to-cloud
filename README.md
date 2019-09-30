@@ -23,3 +23,5 @@ Usage example
       io.rancher.container.pull_image: always
     restart: "no"
 ```
+
+Used https://rclone.org/ for rsync to cloud
