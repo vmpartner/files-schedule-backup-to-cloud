@@ -13,6 +13,7 @@ Usage example
       RCLONE_CONFIG_SELECTEL_AUTH: "https://auth.selcdn.ru/v1.0"
       RCLONE_CONFIG_SELECTEL_ENDPOINT_TYPE: "public"
       RCLONE_DEST: "selectel:my_container/my_math"
+      CHECK_URL: "https://hc-ping.com/my_check_token" # https://healthchecks.io
     volumes:
       - /my_path_backup:/source:ro
       - /etc/localtime:/etc/localtime:ro
