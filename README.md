@@ -3,7 +3,7 @@
 Usage example
 ```yaml
   rclone:
-    image: vmpartner/files-schedule-backup-to-cloud:version-1.0.5
+    image: vmpartner/files-schedule-backup-to-cloud
     environment:
       SCHEDULE: "0 */6 * * *"
       RCLONE_CONFIG_SELECTEL_TYPE: "swift"
