@@ -4,7 +4,7 @@ ENV RCLONE_DEST **None**
 ENV SCHEDULE **None**
 ENV CHECK_URL **None**
 
-RUN apk update && apk add curl
+RUN apk update && apk add --no-cache curl && apk add --no-cache tzdata
 ADD upload.sh /upload.sh
 ADD run.sh /run.sh
 RUN chmod +x /upload.sh && chmod +x /run.sh
