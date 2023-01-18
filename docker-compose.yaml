@@ -1,0 +1,23 @@
+# For test only
+
+services:
+  rclone:
+    image: vmpartner/files-schedule-backup-to-cloud:v1.0.1
+    build:
+      context: ./
+    environment:
+      # SCHEDULE: "0 */6 * * *"
+      RCLONE_CONFIG_SELECTEL_TYPE: "swift"
+      RCLONE_CONFIG_SELECTEL_ENV_AUTH: "false"
+      RCLONE_CONFIG_SELECTEL_USER: ""
+      RCLONE_CONFIG_SELECTEL_KEY: ""
+      RCLONE_CONFIG_SELECTEL_AUTH: "https://auth.selcdn.ru/v1.0"
+      RCLONE_CONFIG_SELECTEL_ENDPOINT_TYPE: "public"
+      RCLONE_DEST: "selectel:backup"
+      # CHECK_URL: "https://hc-ping.com/"
+      FOLDER_DATE: "%Y%m"
+    volumes:
+      - ./backup:/source:ro
+    stdin_open: true
+    tty: true
+    restart: "no"
