@@ -12,9 +12,9 @@ RUN curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip && \
     cd rclone-*-linux-amd64 && \
     cp rclone /usr/bin/ && \
     chown root:root /usr/bin/rclone && \
-    chmod 755 /usr/bin/rclone \
+    chmod 755 /usr/bin/rclone
 
-ADD upload.sh run.sh /
+COPY upload.sh run.sh /
 RUN chmod +x /upload.sh && chmod +x /run.sh
 
 USER root

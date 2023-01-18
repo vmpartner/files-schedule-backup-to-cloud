@@ -12,7 +12,7 @@ else
   fi
 
   echo "Start copy to $RCLONE_DEST/$dt"
-  rclone sync --progress /source "$RCLONE_DEST/$dt"
+  rclone --progress sync /source "$RCLONE_DEST/$dt"
   if [ "$CHECK_URL" = "**None**" ]; then
     echo "INFO: Define CHECK_URL with https://healthchecks.io to monitor sync job"
   else
