@@ -3,7 +3,7 @@
 Usage example
 ```yaml
   rclone:
-    image: vmpartner/files-schedule-backup-to-cloud:v1.0.1
+    image: vmpartner/files-schedule-backup-to-cloud:v3.0.2
     environment:
       SCHEDULE: "0 */6 * * *"
       RCLONE_CONFIG_SELECTEL_TYPE: "swift"
@@ -27,6 +27,6 @@ Used https://rclone.org/ for rsync to cloud
 
 Build from source:
 ```bash
-docker build -t vmpartner/files-schedule-backup-to-cloud:v1.0.1 .
-docker push vmpartner/files-schedule-backup-to-cloud:v1.0.1
+docker build -t vmpartner/files-schedule-backup-to-cloud:v3.0.2 .
+docker push vmpartner/files-schedule-backup-to-cloud:v3.0.2
 ```
