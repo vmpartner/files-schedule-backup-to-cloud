@@ -2,7 +2,7 @@
 
 services:
   rclone:
-    image: vmpartner/files-schedule-backup-to-cloud:v3.0.2
+    image: vmpartner/files-schedule-backup-to-cloud:v3.0.4
     build:
       context: ./
     environment:
